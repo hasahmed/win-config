@@ -3,3 +3,4 @@
   - Posh Git
 - AutoHotKey
 - SharpKeys
+- Vim
