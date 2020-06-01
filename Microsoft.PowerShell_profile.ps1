@@ -79,26 +79,23 @@ New-Alias -Force -Name open -Value Invoke-Item
 New-Alias -Force -Name which -Value Get-Command
 New-Alias -Force -Name touch -Value New-Item
 
+
 Set-Variable -Name "SCRUM" -Value 'C:\Users\hyahmed\OneDrive - MetroStar Systems Inc\work-docs\scrum.txt'
-$env:path += ";C:\Program Files (x86)\jdk-12.0.2\bin"
-$env:path += ";C:\Program Files\Ant\bin"
-$env:path += ";C:\Program Files (x86)\NUnit.org\nunit-console\"
-$env:path += ";C:\Users\hyahmed\Tools\SDK\Tools\PluginRegistration\"
-$env:path += ";C:\Users\hyahmed\Tools\coretools\"
-$env:path += ";C:\Users\hyahmed\scripts\"
-$env:path += ";C:\Program Files\Nuget\tools\"
-$env:path += ";C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TestWindow\"
-$env:path += ";C:\Program Files\CMake\bin\"
-$env:path += ";C:\Users\hyahmed\source\tools\docfx.console.2.53.1\tools"
+
+#$env:path += ";C:\Program Files (x86)\jdk-12.0.2\bin"
+#$env:path += ";C:\Program Files\Ant\bin"
+#$env:path += ";C:\Program Files (x86)\NUnit.org\nunit-console\"
+#$env:path += ";C:\Users\hyahmed\Tools\SDK\Tools\PluginRegistration\"
+#$env:path += ";C:\Users\hyahmed\Tools\coretools\"
+#$env:path += ";C:\Users\hyahmed\scripts\"
+#$env:path += ";C:\Program Files\Nuget\tools\"
+#$env:path += ";C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TestWindow\"
+#$env:path += ";C:\Program Files\CMake\bin\"
+#$env:path += ";C:\Users\hyahmed\source\tools\docfx.console.2.53.1\tools"
+$env:path += ";C:\Program Files (x86)\Vim\vim82"
 
 
-Import-Module posh-git
-
-# Chocolatey profile
-#$ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
-#if (Test-Path($ChocolateyProfile)) {
-#  Import-Module "$ChocolateyProfile"
-#}
+#Import-Module posh-git
 
 function java-jar-bfg {
     (& java -jar $HOME\source\lib\bfg.jar $args)
@@ -108,8 +105,9 @@ function lsexe {
     ls -Filter *.exe
 }
 
-New-Alias -Force -Name bfg -Value java-jar-bfg
-. ~\source\scripts\util.ps1
-Add-PSSnapin Microsoft.Xrm.Tooling.Connector
+#New-Alias -Force -Name bfg -Value java-jar-bfg
+#. ~\source\scripts\util.ps1
+
+#Add-PSSnapin Microsoft.Xrm.Tooling.Connector
 
 New-Alias -Force -Name gsy -Value git-sync
