@@ -1,0 +1,5 @@
+- PowerShell
+  - Git
+  - Posh Git
+- AutoHotKey
+- SharpKeys

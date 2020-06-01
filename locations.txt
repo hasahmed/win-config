@@ -1,0 +1,2 @@
+PowerShell profile: ~\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
+AutoHotkey File: ~\Documents\AutoHotkey.ahk 
